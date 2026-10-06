@@ -1,0 +1,23 @@
+const titulo = document.getElementById("titulo");
+const parrafo1 = document.getElementsByClassName("parrafo")[0];
+const parrafo2 = document.getElementsByClassName("parrafo")[1];
+const nombre = document.getElementsByName("nombre");
+const apellido = document.getElementsByName("apellido");
+const li1 = document.getElementsByTagName("li")[0];
+const li2 = document.getElementsByTagName("li")[1];
+const li3 = document.getElementsByTagName("li")[2];
+const tituloQuery = document.querySelector("#titulo");
+const parrafo1Query = document.querySelectorAll(".parrafo")[0];
+const parrafo2Query = document.querySelectorAll(".parrafo")[1];
+
+console.log(`${titulo.textContent} -> get via getElementById`);
+console.log(`${parrafo1.textContent} -> get via getElementsByClassName`);
+console.log(`${parrafo2.textContent} -> get via getElementsByClassName`);
+console.log(`${nombre[0].placeholder} -> get via getElementsByName`);
+console.log(`${apellido[0].placeholder} -> get via getElementsByName`);
+console.log(`${li1.textContent} -> get via getElementsByTagName`);
+console.log(`${li2.textContent} -> get via getElementsByTagName`);
+console.log(`${li3.textContent} -> get via getElementsByTagName`);
+console.log(`${tituloQuery.textContent} -> get via querySelector`);
+console.log(`${parrafo1Query.textContent} -> get via querySelectorAll`);
+console.log(`${parrafo2Query.textContent} -> get via querySelectorAll`);
