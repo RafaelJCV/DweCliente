@@ -90,6 +90,31 @@ class Course {
   getStudentById(id) {
     return this.students.find((student) => student.id === id);
   }
+
+  getPassedStudents() {
+    return this.students.filter((students) => students.grade >= 5);
+  }
+
+  getFailedStudents() {
+    return this.students.filter((students) => students.grade < 5);
+  }
+
+  getCompletedStudents() {
+    return this.students.filter((students) => students.completed === true);
+  }
+
+  getStudentNames() {}
+
+  getAverageGrade() {
+    if (this.students.length === 0) {
+      return 0;
+    }
+    return (
+      this.students.reduce((acc, student) => {
+        return acc + student.grade;
+      }, 0) / this.students.length
+    );
+  }
 }
 
 course = new Course(courseData);
