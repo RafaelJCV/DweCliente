@@ -11,7 +11,7 @@ const DEFAULT_DAY = "Número de día inválido";
  * Cualquier otra opción -> DEFAULT_DAY
  */
 export const getDayOfWeekSC = (day) => {
-    switch (day) {
+    switch (day){
         case 1:
             return "Lunes";
         case 2:
@@ -56,7 +56,10 @@ let dayOfWeek = {
  *
  */
 export const getDayOfWeekObject = (day) => {
-    return dayOfWeek[day] || DEFAULT_DAY;
+    if(day > 0 && day < 8)
+        return dayOfWeek[day];
+    else
+        return DEFAULT_DAY;
 };
 
 /************************************************ */
@@ -100,7 +103,8 @@ let calculatorObject = {
  *
  */
 export const simpleCalculatorObject = (operartor, num_1, num_2) => {
-    return calculatorObject[operartor]
-    ? calculatorObject[operartor](num_1, num_2)
-    : DEFAULT_OPERARTOR_ERROR;
+    if (operartor in calculatorObject)
+        return calculatorObject[operartor](num_1, num_2);
+    else
+        return DEFAULT_OPERARTOR_ERROR;
 };
