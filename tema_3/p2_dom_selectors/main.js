@@ -1,0 +1,23 @@
+const titulo = document.getElementById("titulo");
+const parrafo_1 = document.getElementsByClassName("parrafo")[0];
+const parrafo_2 = document.getElementsByClassName("parrafo")[1];
+const nombre = document.getElementsByName("nombre")[0];
+const apellido = document.getElementsByName("apellido")[0];
+const elemento_1 = document.getElementsByTagName("li")[0];
+const elemento_2 = document.getElementsByTagName("li")[1];
+const elemento_3 = document.getElementsByTagName("li")[2];
+const titulo_qs = document.querySelector("#titulo");
+const parrafo_1_qs = document.querySelectorAll(".parrafo")[0];
+const parrafo_2_qs = document.querySelectorAll(".parrafo")[1];
+
+console.log(titulo.textContent);
+console.log(parrafo_1.textContent);
+console.log(parrafo_2.textContent);
+console.log(nombre.placeholder);
+console.log(apellido.placeholder);
+console.log(elemento_1.textContent);
+console.log(elemento_2.textContent);
+console.log(elemento_3.textContent);
+console.log(titulo_qs.textContent);
+console.log(parrafo_1_qs.textContent);
+console.log(parrafo_2_qs.textContent);

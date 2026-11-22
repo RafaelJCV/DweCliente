@@ -1,16 +1,16 @@
 console.clear();
 
-let welcome = "%cWelcome to the application!";
-let info = "%cThis is a informational message.";
-let warning = "%cThis is a warning. Be cautious.";
-let error = "%cError! Something went wrong.";
+const welcome = "%cWelcome to the application!";
+const info = "%cThis is a informational message.";
+const warning = "%cThis is a warning. Be cautious.";
+const error = "%cError! Something went wrong.";
 
-let welcome_cs = "color: blue; font-size: 18px; font-weight: bold";
-let info_cs = "color: green; font-size: 16px";
-let warning_cs = "color: yellow; font-size: 16px";
-let error_cs = "color: red; font-size: 16px";
+const welcome_cs = "color: blue; font-size: 18px; font-weight: bold";
+const info_cs = "color: green; font-size: 16px";
+const warning_cs = "color: yellow; font-size: 16px";
+const error_cs = "color: red; font-size: 16px";
 
-let info_table = [
+const info_table = [
     {
         name: "John",
         age: 30,
