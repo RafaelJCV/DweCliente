@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de películas</title>
+</head>
+<body>
+
+    <h1>Catálogo de películas</h1>
+
+    <label for="genero">Selecciona un género:</label>
+
+    <select id="genero">
+        <option value="todos">Todas</option>
+        <option value="terror">Terror</option>
+        <option value="comedia">Comedia</option>
+        <option value="accion">Acción</option>
+    </select>
+
+    <button id="mostrar">Mostrar películas</button>
+    <button id="limpiar">Limpiar resultados</button>
+
+    <h2>Películas disponibles</h2>
+
+    <div id="resultados"></div>
+
+    <p id="contador"></p>
+
+    <script type="module" src="/main.js"></script>
+
+</body>
+</html>
